@@ -346,3 +346,25 @@ main {
   font-size: 22px;
   margin-top: 20px;
 }
+
+.habilidades ul {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.habilidades img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+
+.habilidades img:hover {
+  background-color: var(--main-colors);
+  transform: scale(1.1);
+}
