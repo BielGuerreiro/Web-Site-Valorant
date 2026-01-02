@@ -10,6 +10,8 @@
 :root {
   --main-color: #ff4655;
   --secundary-color: #666;
+  --background-escuro: #0f1923;
+  --texto-escuro: rgb(16, 20, 82);
 }
 
 html {
@@ -17,7 +19,7 @@ html {
 }
 
 body {
-  min-height: 500vh;
+  min-height: 900vh;
 }
 
 header {
@@ -302,7 +304,7 @@ main {
 /* quarta _____________________________________________________________________ */
 .quarta-pagina {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   position: relative;
   overflow: hidden;
 }
@@ -367,4 +369,125 @@ main {
 .habilidades img:hover {
   background-color: var(--main-colors);
   transform: scale(1.1);
+}
+
+/* quinta _____________________________________________________________________ */
+
+.quinta-pagina {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+.apresentacao {
+  position: absolute;
+  left: 3%;
+  top: 40%;
+}
+
+.apresentacao h1 {
+  color: #8a2be2;
+  font-size: 50px;
+}
+
+.apresentacao h2 {
+  color: #0b0e14;
+  font-size: 23px;
+  max-width: 700px;
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+.video {
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  width: 50%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.video video {
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+/* sexta _____________________________________________________________________ */
+
+.sexta-pagina {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+  position: relative;
+  background-color: #0f1923;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo6 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titulo6 h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.titulo6 h2 {
+  color: white;
+}
+
+.grid-armas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.arma-item {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.nome-bg {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.09);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.arma-item img {
+  width: 90%;
+  height: auto;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  transform: rotate(30deg);
+}
+
+.arma-item:hover img {
+  transform: scale(1.1);
+}
+
+.botao-arma {
+  padding: 20px 20px;
+  background-color: var(--main-color);
+  margin-top: 80px;
+  border-radius: 3px;
+}
+
+.botao-arma a {
+  color: white;
+  font-size: 20px;
 }
