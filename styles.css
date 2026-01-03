@@ -540,8 +540,26 @@ main {
   height: 55vh;
 }
 
-/* oitava _____________________________________________________________________ */
+.botao-mapa {
+  position: absolute;
+  left: 20%;
+  top: 120%;
+  padding: 20px 20px;
+  background-color: var(--main-color);
+  border-radius: 3px;
+  cursor: pointer;
+}
 
+.botao-mapa:hover {
+  background-color: rgb(224, 28, 28);
+}
+
+.botao-mapa a {
+  color: white;
+  font-size: 20px;
+}
+
+/* oitava _____________________________________________________________________ */
 .oitava-pagina {
   width: 100%;
   height: 80vh;
@@ -580,4 +598,75 @@ main {
 .elos p {
   color: white;
   max-width: 800px;
+}
+
+/* nona _____________________________________________________________________ */
+
+.nona-pagina {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  margin-top: 150px;
+}
+
+.agentes {
+  display: flex;
+}
+
+.agentes img {
+  height: 70vh;
+  width: auto;
+}
+
+.reyna {
+  position: absolute;
+  left: 20%;
+}
+
+.titulo9 {
+  position: absolute;
+  top: 15%;
+  right: 14%;
+  max-width: 500px;
+  z-index: 10;
+}
+
+.titulo9 h1 {
+  font-size: 4rem;
+  color: #ff4655;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.titulo9 h3 {
+  font-size: 1.5rem;
+  color: #0f1923;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.titulo9 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.botao-agentes {
+  position: absolute;
+  left: 59%;
+  top: 64%;
+  padding: 20px 20px;
+  background-color: var(--main-color);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.botao-agentes:hover {
+  background-color: rgb(224, 28, 28);
+}
+
+.botao-agentes a {
+  color: white;
+  font-size: 20px;
 }
