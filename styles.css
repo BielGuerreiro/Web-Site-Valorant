@@ -19,7 +19,8 @@ html {
 }
 
 body {
-  min-height: 900vh;
+  min-height: auto;
+  overflow-x: hidden;
 }
 
 header {
@@ -620,7 +621,16 @@ main {
 
 .reyna {
   position: absolute;
-  left: 20%;
+  left: 15%;
+}
+
+.parede {
+  background-color: var(--background-escuro);
+  width: 50%;
+  height: 65vh;
+  position: absolute;
+  left: 50%;
+  top: 6%;
 }
 
 .titulo9 {
@@ -633,23 +643,27 @@ main {
 
 .titulo9 h1 {
   font-size: 4rem;
-  color: #ff4655;
+  color: var(--main-color);
   text-transform: uppercase;
   font-weight: 900;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .titulo9 h3 {
   font-size: 1.5rem;
-  color: #0f1923;
+  color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.afastado {
+  margin-left: 100px;
 }
 
 .titulo9 p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #333;
+  color: #ffffff;
 }
 
 .botao-agentes {
@@ -669,4 +683,126 @@ main {
 .botao-agentes a {
   color: white;
   font-size: 20px;
+}
+
+/* rodape _________________________________________________________________________________________ */
+
+.rodape-geral {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 40px 5%;
+  font-family: sans-serif;
+}
+
+.rodape-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.rodape-logo img {
+  width: 5%;
+  height: auto;
+}
+
+/* ESTILO DOS LINKS COM ANIMAÇÃO DE LINHA */
+.rodape-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.rodape-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 4px 0;
+}
+
+.rodape-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4655; /* Cor destaque */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.rodape-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* O segredo para a linha sumir da esquerda para a direita */
+.rodape-links a:not(:hover)::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+/* ICONES DAS REDES */
+.rodape-sociais {
+  display: flex;
+  gap: 15px;
+}
+
+.rodape-sociais a {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.rodape-sociais a:hover {
+  color: #ff4655;
+}
+
+/* PARTE INFERIOR */
+.rodape-divisor {
+  border: 0;
+  border-top: 1px solid #333333;
+  margin-bottom: 20px;
+}
+
+.rodape-baixo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #999999;
+}
+
+.rodape-legal {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.link-cookies {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.texto-copyright {
+  line-height: 1.4;
+}
+
+.voltar-topo {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.voltar-topo:hover {
+  color: #ff4655;
 }
