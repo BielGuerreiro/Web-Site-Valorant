@@ -799,127 +799,334 @@ main {
 }
 
 @media (max-width: 1024px) {
-  .box-container,
-  .quem-somos,
-  .titulo4,
-  .apresentacao,
-  .video,
-  .mapa-texto,
-  .mapa,
-  .elos,
-  .titulo9,
-  .parede {
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    width: 100%;
-    max-width: 100%;
-    transform: none;
-    padding: 20px;
-    margin: 0 auto;
+  .botao {
+    display: none;
   }
 
-  main,
-  .pagina2,
-  .terceira-pagina,
-  .quarta-pagina,
-  .quinta-pagina,
-  .setima-pagina,
-  .oitava-pagina,
-  .nona-pagina {
-    height: auto;
-    min-height: 100vh;
-    display: flex;
+  main {
+    height: 20vh;
+  }
+
+  .menu {
+    margin-left: 30px;
+  }
+
+  .menu li {
+    font-size: 15px;
+  }
+
+  .linha-container {
+    width: 50%;
+    margin-top: 14.5vh;
+  }
+
+  .icones i {
+    font-size: 20px;
+  }
+
+  .box-container {
+    width: 100%;
+    height: 40vh;
+    top: 98%;
+    left: 0;
+  }
+
+  .container-desc {
+    top: 10%;
+    left: 5%;
+  }
+
+  .titulo-nome {
+    margin-left: 40px;
+  }
+
+  .titulo-nome img {
+    width: 80%;
+  }
+
+  .titulo {
+    font-size: 18px;
+    white-space: normal;
+    margin-left: 20px;
+  }
+
+  .boxes {
+    top: 150px;
+  }
+
+  .windows,
+  .xbox,
+  .play {
+    padding: 10px 80px;
+  }
+
+  /* pagina 2 _________________________________________________________________________________________________ */
+  .pagina2 {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .quem-somos {
+    left: 10%;
+    top: 50%;
+  }
+
+  .quem-somos h1 {
+    font-size: 26px;
+  }
+
+  .quem-somos h2 {
+    font-size: 15px;
+    max-width: 700px;
+  }
+
+  /* pagina 3 _________________________________________________________________________________________________ */
+  .terceira-pagina {
     flex-direction: column;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .novo {
+    width: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .novo img {
+    width: 40%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  /* O Título */
+  .titulo2 {
+    position: static;
+    transform: none;
+    margin-left: 20px;
+    top: auto;
+    right: auto;
+    left: auto;
+  }
+
+  .titulo2 h1 {
+    font-size: 30px;
+  }
+
+  .terceira-box {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* quarta ____________________________________________________________________________________________ */
+  .quarta-pagina {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .banner img {
+    height: 70%;
+  }
+
+  .titulo4 {
+    left: 5%;
+    top: 50%;
+  }
+
+  .titulo4 h1 {
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 0 3px white;
+  }
+
+  .titulo4 h2 {
+    font-size: 18px;
+    max-width: 400px;
+    text-align: center;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+  }
+
+  .habilidades ul {
+    margin-left: 60px;
+  }
+
+  .habilidades img {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* quinta _____________________________________________________________________ */
+
+  .quinta-pagina {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+  }
+
+  .apresentacao {
+    position: absolute;
+    left: 0;
+    top: 35%;
+  }
+
+  .apresentacao h1 {
+    font-size: 30px;
     text-align: center;
   }
 
-  .fundo-iso {
+  .apresentacao h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .video {
+    left: 0;
+    top: 0;
     width: 100%;
-    overflow: hidden;
+    height: 100%;
+  }
+
+  .video video {
+    width: 100vw;
+    height: 25vh;
+  }
+
+  /* sexta  _____________________________________________________________________ */
+  .grid-armas {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 30px;
+  }
+
+  .arma-item {
+    height: 200px;
+    width: 100%;
+  }
+
+  .nome-bg {
+    font-size: 2.2rem;
+  }
+
+  .arma-item img {
+    width: 80%;
+  }
+
+  /* setima ___________________________________________________________________________________ */
+
+  .setima-pagina {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+
+  .mapa-texto {
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .mapa-texto h2 {
+    font-size: 35px;
+  }
+
+  .mapa-texto h3 {
+    font-size: 22px;
+  }
+
+  .mapa-texto p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .mapa {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mapa img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  .botao-mapa {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 40px auto 0 auto;
+    width: fit-content;
+    display: block;
+  }
+
+  /* oitava _____________________________________________________________________ */
+  .oitava-pagina {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fundo-iso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
 
   .fundo-iso img {
     width: 100%;
-    height: 50vh;
+    height: 50%;
     object-fit: cover;
-    object-position: center;
   }
 
-  .menu {
-    justify-content: center;
-    height: auto;
-    padding: 20px 0;
-  }
-  .menu ul {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .titulo,
-  .titulo2 h1,
-  .titulo4 h1,
-  .apresentacao h1,
-  .mapa-texto h2,
-  .titulo9 h1 {
-    font-size: 1.8rem;
-    white-space: normal;
-    margin-left: 0;
-  }
-
-  .agentes {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .reyna {
+  .elos {
     position: relative;
-    left: 0;
-    margin-top: -20px;
-  }
-  .agentes img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .grid-armas {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    width: 100%;
-  }
-  .terceira-box {
-    flex-direction: column;
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .botao-arma,
-  .botao-mapa,
-  .botao-agentes {
-    position: relative;
+    z-index: 2;
     left: 0;
     top: 0;
-    margin: 20px auto;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .video video {
+  .elos img {
+    order: 4;
     width: 100%;
+    margin-top: 30px;
     height: auto;
   }
 
-  .rodape-topo,
-  .rodape-baixo {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
+  .elos h2 {
+    margin-top: 0px;
+    font-size: 20px;
+    text-shadow: 0 0 2px var(--main-color);
   }
-  .rodape-links {
-    justify-content: center;
-    width: 100%;
+
+  .elos h3 {
+    font-size: 15px;
+    max-width: 700px;
+    text-shadow: 0 0 2px #000;
   }
-  .rodape-logo img {
-    width: 50px;
+
+  .elos p {
+    font-size: 12px;
+    max-width: 800px;
+    text-shadow: 0 0 2px #000;
   }
 }
