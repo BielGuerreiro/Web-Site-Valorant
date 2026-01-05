@@ -799,7 +799,9 @@ main {
 }
 
 @media (max-width: 1024px) {
-  .botao {
+  .botao,
+  .titulo9 p,
+  .titulo9 h3 {
     display: none;
   }
 
@@ -1128,5 +1130,108 @@ main {
     font-size: 12px;
     max-width: 800px;
     text-shadow: 0 0 2px #000;
+  }
+
+  /* nona _____________________________________________________________________ */
+
+  .nona-pagina {
+    height: auto;
+
+    margin-top: 10px;
+  }
+
+  .agentes {
+    display: flex;
+    margin-left: -70px;
+  }
+
+  .agentes img {
+    height: 30vh;
+  }
+
+  .reyna {
+    left: 1%;
+  }
+
+  .parede {
+    width: 48%;
+    height: 25vh;
+    left: 52%;
+    top: 6%;
+  }
+
+  .titulo9 {
+    top: 15%;
+    left: 55%;
+  }
+
+  .titulo9 h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .afastado {
+    margin-left: 20px;
+  }
+
+  .botao-agentes {
+    left: 55%;
+    top: 60%;
+    padding: 15px 15px;
+  }
+
+  .botao-agentes a {
+    font-size: 15px;
+  }
+
+  /* rodape ________________________________________________________________________________ */
+
+  .rodape-geral {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .rodape-topo {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .rodape-logo img {
+    width: 60px;
+  }
+
+  .rodape-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .rodape-sociais {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .rodape-baixo {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .rodape-legal {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .voltar-topo {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    margin-top: 10px;
+  }
+
+  .texto-copyright {
+    order: 2;
   }
 }
